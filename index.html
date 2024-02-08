@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css files -->
+    <link rel="stylesheet" 
+    href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>dsing test</title>
+  </head>
+  <body>
+
+    <!-- start loding page -->
+    <div class="bike-container">
+      <svg class="bike" viewBox="0 0 48 30" width="48px" height="30px">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+          <g transform="translate(9.5,19)">
+            <circle class="bike__tire" r="9" stroke-dasharray="56.549 56.549" />
+            <g class="bike__spokes-spin" stroke-dasharray="31.416 31.416" stroke-dashoffset="-23.562">
+              <circle class="bike__spokes" r="5" />
+              <circle class="bike__spokes" r="5" transform="rotate(180,0,0)" />
+            </g>
+          </g>
+          <g transform="translate(24,19)">
+            <g class="bike__pedals-spin" stroke-dasharray="25.133 25.133" stroke-dashoffset="-21.991" transform="rotate(67.5,0,0)">
+              <circle class="bike__pedals" r="4" />
+              <circle class="bike__pedals" r="4" transform="rotate(180,0,0)" />
+            </g>
+          </g>
+          <g transform="translate(38.5,19)">
+            <circle class="bike__tire" r="9" stroke-dasharray="56.549 56.549" />
+            <g class="bike__spokes-spin" stroke-dasharray="31.416 31.416" stroke-dashoffset="-23.562">
+              <circle class="bike__spokes" r="5" />
+              <circle class="bike__spokes" r="5" transform="rotate(180,0,0)" />
+            </g>
+          </g>
+          <polyline class="bike__seat" points="14 3,18 3" stroke-dasharray="5 5" />
+          <polyline class="bike__body" points="16 3,24 19,9.5 19,18 8,34 7,24 19" stroke-dasharray="79 79" />
+          <path class="bike__handlebars" d="m30,2h6s1,0,1,1-1,1-1,1" stroke-dasharray="10 10" />
+          <polyline class="bike__front" points="32.5 2,38.5 19" stroke-dasharray="19 19" />
+        </g>
+      </svg>
+    </div>
+    <!-- end loding page -->
+  <!-- start navbar section  -->
+  <header class="d-grid position-relative">
+    <div class="container-lg d-flex align-items-center justify-content-between">
+      <a href="index.html" class="d-flex website-logo align-items-center">
+        <img src="./public/logo.svg" alt="">
+      </a>
+      <ul class="d-md-flex  align-items-center navlinks">
+        <li class="nav_link"><a href="#">Products</a></li>
+        <li class="nav_link"><a href="#">VPS Hosting</a></li>
+        <li class="nav_link"><a href="#">Web Hosting</a></li>
+        <li class="nav_link"><a href="#">Dedicated Hosting</a></li>
+      </ul>
+      <button class="nav-btn d-none d-md-flex"> Contant Sales</button>
+      <button style="font-size: 2rem;" class="d-md-none menu-toggle">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </header>
+  <!-- end navbar section  -->
+  <!-- start hero section  -->
+  <div class="hero">
+    <div class="row gap-5 gap-lg-0  container align-items-center">
+      <div class="col-lg-6 text-lg-start text-center">
+        <h1 class="hero-titel">Your trusted web <br> hosting partner</h1>
+        <p class="hero-discrption">We make your business grow constantly in <br> each segment of the market</p>
+        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start" style="gap:clamp(15px ,6vw ,30px );">
+          <button class="big-primery-button w-100">Explore locations</button>
+          <button class="big-outline-button w-100">Create Account</button>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img src="./public/image.png" alt="home-img" class="img-fluid">
+      </div>
+    </div>
+  </div>
+  <!-- end hero section  -->
+  <!-- start the Find section -->
+  <div class="min-vh-100 cenetr-grid container">
+    <div class="dmain-tab p-4 w-100">
+      <h2 class="domain-titel">Find your perfect Domain <br>
+        with Nordel</h2>
+        <p class="domain-discrption my-3">Enter your idea or keyword below and begin your journey toward 
+          a memorable and effective domain for your website.</p>
+          <div class="row gap-2 gap-md-0 ">
+            <div class="col-md-8 col-lg-10">
+              <input type="text" class="dmain-input w-100" placeholder="Enter your keyword or domain idea...">
+            </div>
+            <div class="col-md-4 col-lg-2">
+              <button class="black-button">Search Now</button>
+            </div>
+          </div>
+    </div>
+
+  </div>
+  <!-- end the Find section -->
+
+  <!-- start the pricing section -->
+  <div class="min-vh-100 py-4 cenetr-grid">
+      <div class="row gap-3 gap-md-0 container">
+        <div class="col-md-6 col-lg-3 d-grid">
+          <h3 class="pricing-type green">.com</h3>
+          <p class="pricing-discrption">The Trusted Classic</p>
+          <p class="pricing-price">From <strong>$12.99</strong>/year</p>
+        </div>
+        <div class="col-md-6 col-lg-3 d-grid">
+          <h3 class="pricing-type red">.tech</h3>
+          <p class="pricing-discrption">For Innovative Technology Projects</p>
+          <p class="pricing-price">From <strong>$19.99</strong>/year</p>
+        </div>
+        <div class="col-md-6 col-lg-3 d-grid mt-md-3 mt-lg-0">
+          <h3 class="pricing-type green">.store</h3>
+          <p class="pricing-discrption">Where Shopping Is Done Online</p>
+          <p class="pricing-price">From <strong>$14.99</strong>/year</p>
+        </div>
+        <div class="col-md-6 col-lg-3 d-grid mt-md-3 mt-lg-0">
+          <h3 class="pricing-type gray">.design</h3>
+          <p class="pricing-discrption">For Creatives Who Leave a Lasting Impression</p>
+          <p class="pricing-price">From <strong>$24.99</strong>/year</p>
+        </div>
+      </div>
+  </div>
+  <!-- end the pricing section -->
+
+    <!-- start Hosting section -->
+    <div class="min-vh-100 Hosting-section py-3 d-grid place-items-center" 
+    style="background-color: #EFF1EC;">
+      <div class="row gap-4 gap-md-0 align-items-center container">
+        <div class="col-lg-6">
+          <img src="./public/img.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="Hosting-titel text-center text-lg-start">Hosting Solutions <br> Tailored to Your <br> Needs</h1>
+          <p class="Hosting-discrption text-center text-lg-start my-4">We underst                                                                    and that every project is unique, which is why we offer a variety of 
+            Hosting Solutions designed to fit your specific needs. Whether you're launching 
+            a personal page, e-commerce site, or business app.</p>
+          <button class="Hosting-readMore">Read More</button>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-sm-row px-3 px-md-0 align-items-start justify-content-center" 
+      style="gap: 30px;margin-top: clamp(50px ,4vw , 100px);">
+        <div class="flex-1">
+          <h1 class="subtitel-hosting">Unmatched Performance</h1>
+          <p class="card-discrption-hosting">With cutting-edge technology and optimized infrastructure, we guarantee fast loading</p>
+        </div>
+        <div class="flex-1">
+          <h1 class="subtitel-hosting">Cutting-edge Security</h1>
+          <p class="card-discrption-hosting">Rest easy knowing that your information and that of your visitors is safe.</p>
+        </div>
+        <div class="flex-1">
+          <h1 class="subtitel-hosting">24/7 Expert Support</h1>
+          <p class="card-discrption-hosting">Whether you have questions, are facing technical issues, or need assistance</p>
+        </div>
+      </div>
+  </div>
+  <!-- end Hosting section -->
+
+      <!-- start plans section -->
+      <div class="min-vh-100 plans-section cenetr-grid" >
+        <div class="container d-grid align-items-center h-100">
+          <div class="upper-content text-center text-lg-start">
+            <h1 class="titel">We offer a diverse range of hosting plans</h1>
+            <p class="subtitel">From solopreneurs to growing businesses, our plans are flexible, <br>
+              scalable, and backed by exceptional performance.</p>
+            </div>
+            <div class="row gap-4 gap-md-0 justify-content-center mt-4">
+              <div class="col-md-6">
+                <div class="d-flex align-items-start" style="gap: 20px;">
+                  <img src="./public/plans-icons/first-img.png" alt="">
+                  <div>
+                    <h1 class="card-plan-titel">Entrepreneur Plan - To grow</h1>
+                    <p class="card-plan-discrption">Explore our options and find the perfect plan for you, this plan offers flexibility.</p>
+                    <span class="card-plan-price">Price: $0.02/hour</span>
+                  </div>
+  
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex align-items-start" style="gap: 20px;">
+                  <img src="./public/plans-icons/second-icon.png" alt="">
+                  <div>
+                    <h1 class="card-plan-titel">Commerce Plan - For online stores</h1>
+                    <p class="card-plan-discrption">Explore our options and find the perfect plan for you, this plan offers flexibility.</p>
+                    <span class="card-plan-price">Price: $0.15/hour</span>
+                  </div>
+  
+                </div>
+              </div>
+              <div class="col-md-6" style="margin-top: 30px;">
+                <div class="d-flex align-items-start" style="gap: 20px;">
+                  <img src="./public/plans-icons/thered-img.png" alt="">
+                  <div>
+                    <h1 class="card-plan-titel">Pro Plan - For established sites</h1>
+                    <p class="card-plan-discrption">Explore our options and find the perfect plan for you, this plan offers flexibility.</p>
+                    <span class="card-plan-price">Price: $0.10/hour</span>
+                  </div>
+  
+                </div>
+              </div>
+              <div class="col-md-6" style="margin-top: 30px;">
+                <div class="d-flex align-items-start" style="gap: 20px;">
+                  <img src="./public/plans-icons/last-icon.png" alt="">
+                  <div>
+                    <h1 class="card-plan-titel">Business Plan - For large projects</h1>
+                    <p class="card-plan-discrption">Explore our options and find the perfect plan for you, this plan offers flexibility.</p>
+                    <span class="card-plan-price">Price: $0.20/hour</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Hosting section -->
+
+
+        <!-- start Hosting section -->
+        <div class="min-vh-100 Hosting-section py-3 d-grid place-items-center" 
+        style="background-color: #EFF1EC;">
+          <div class="row gap-4 gap-lg-0 container">
+            <div class="col-lg-6 order-2 order-lg-1">
+              <h1 class="Hosting-titel text-center text-lg-start" style="margin-bottom: 30px;">
+                Experience the Power <br class="d-none d-lg-block"> of Ultra-Fast <br class="d-none d-lg-block"> Performance
+              </h1>
+              <p class="Hosting-discrption text-center text-lg-start">
+                we pride ourselves on delivering ultra-fast performance 
+                to ensure the best possible experience for your visitors.
+              </p>
+                <p class="Hosting-discrption text-center text-lg-start" style="margin-block: 30px;">
+                  Our cutting-edge technology and optimized infrastructure combine to provide 
+                  lightning-fast loading times and exceptional performance in every corner of your website. 
+                </p>
+              <button class="Hosting-readMore">Read More</button>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 text-center">
+              <img src="./public/img.png" class="img-fluid" alt="">
+            </div>
+          </div>
+      </div>
+      <!-- end Hosting section -->
+
+      <!-- start packages section  -->
+      <section class="min-vh-100 py-3 d-flex align-items-center flex-column gap-4  justify-content-between"
+      style="background: #f5f6f3;">
+      <div class="align-self-lg-start container ">
+        <h1 class="packages-titel">Our Transparent Pricing <br> Structure</h1>
+        <p class="packages-discrption">Discover the packages we offer and choose the plan that best suits <br>
+           your online goals.</p>
+      </div>
+      <div class="row  align-items-start gap-4 gap-md-0 container">
+        <div class="col-md-4"
+        >
+
+          <div class="mx-auto package-box">
+            <span class="subtitel-package">Basic Package</span>
+            <p class="price"><strong>$49</strong></p>
+            <p class="type-package">month</p>
+            <p class="package-discrption">Discover the packages we offer 
+              and choose the plan that best</p>
+            <hr class="package-spartair">
+            <ul class="d-grid" 
+            style="gap: 20px;">
+              <li class="backage-benfite">Storage: 20 GB</li>
+              <li class="backage-benfite">Bandwidth: 200 GB</li>
+              <li class="backage-benfite">Basic Support</li>
+              <li class="backage-benfite">Monthly Backups</li>
+            </ul>
+            <button class="button-package">
+Start Now
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4"
+        >
+
+          <div class="mx-auto package-box active">
+            <span class="subtitel-package">Entrepreneur Package</span>
+            <p class="price"><strong>
+$99
+            </strong></p>
+            <p class="type-package">
+month
+
+            </p>
+            <p class="package-discrption">
+              Discover the packages we offer and choose the plan that best
+            </p>
+            <hr class="package-spartair">
+            <ul class="d-grid" 
+            style="gap: 20px;">
+              <li class="backage-benfite">Storage: 50 GB</li>
+              <li class="backage-benfite">Bandwidth: 500 GB</li>
+              <li class="backage-benfite">Priority Support</li>
+              <li class="backage-benfite">Monthly Backups</li>
+
+            </ul>
+            <button class="button-package">
+Start Now
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4"
+        >
+
+          <div class="mx-auto package-box">
+            <span class="subtitel-package">Business Package</span>
+            <p class="price"><strong>$199</strong></p>
+            <p class="type-package">month</p>
+            <p class="package-discrption">Discover the packages we offer and choose the plan that best</p>
+            <hr class="package-spartair">
+            <ul class="d-grid" 
+            style="gap: 20px;">
+              <li class="backage-benfite">SSD storage: 100 GB</li>
+              <li class="backage-benfite">Unlimited Bandwidth</li>
+              <li class="backage-benfite">24/7 VIP Support</li>
+              <li class="backage-benfite">Business SSL Certificate</li>
+            </ul>
+            <button class="button-package">Start Now</button>
+
+          </div>
+        </div>
+      </div>
+      </section>
+      <!-- end packages section  -->
+      
+      <!-- start fqo section  -->
+      <section class="min-vh-100 row fqo-section py-4 cenetr-grid">
+        <div class="col-11 col-md-8">
+          <div class="upper-content text-center">
+            <h1 class="titel">
+        Get Answers
+            </h1>
+            <p class="discrption">
+  If you have questions or need additional information, don't hesitate <br> 
+  to contact our dedicated support team!
+  </p>
+          </div>
+          <ul class="d-grid" style="gap: 20px;">
+            <li class="fqo-container">
+              <div class="fqo-section cursor-pointer d-flex align-items-center">
+                <h3 class="flex-1">How can I migrate my website to Nordel?</h3>
+                <img src="./public/icon.png" alt="">
+              </div>
+              <div class="fqo-answer">
+                <p>We offer complete migration assistance. You can follow our simple
+                   steps in
+                   the Support section or contact our team for personalized help.
+                </p>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                   Lorem Ipsum has been the industry's standard dummy
+                </p>
+              </div>
+            </li>
+            <li class="fqo-container">
+              <div class="fqo-section cursor-pointer d-flex align-items-center">
+                <h3 class="flex-1">How can I migrate my website to Nordel?</h3>
+                <img src="./public/icon.png" alt="">
+              </div>
+              <div class="fqo-answer">
+                <p>We offer complete migration assistance. You can follow our simple
+                   steps in
+                   the Support section or contact our team for personalized help.
+                </p>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                   Lorem Ipsum has been the industry's standard dummy
+                </p>
+              </div>
+            </li>
+            <li class="fqo-container">
+              <div class="fqo-section cursor-pointer d-flex align-items-center">
+                <h3 class="flex-1">How can I migrate my website to Nordel?</h3>
+                <img src="./public/icon.png" alt="">
+              </div>
+              <div class="fqo-answer">
+                <p>We offer complete migration assistance. You can follow our simple
+                   steps in
+                   the Support section or contact our team for personalized help.
+                </p>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                   Lorem Ipsum has been the industry's standard dummy
+                </p>
+              </div>
+            </li>
+            <li class="fqo-container">
+              <div class="fqo-section cursor-pointer d-flex align-items-center">
+                <h3 class="flex-1">How can I migrate my website to Nordel?</h3>
+                <img src="./public/icon.png" alt="">
+              </div>
+              <div class="fqo-answer">
+                <p>We offer complete migration assistance. You can follow our simple
+                   steps in
+                   the Support section or contact our team for personalized help.
+                </p>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                   Lorem Ipsum has been the industry's standard dummy
+                </p>
+              </div>
+            </li>
+            <li class="fqo-container">
+              <div class="fqo-section cursor-pointer d-flex align-items-center">
+                <h3 class="flex-1">How can I migrate my website to Nordel?</h3>
+                <img src="./public/icon.png" alt="">
+              </div>
+              <div class="fqo-answer">
+                <p>We offer complete migration assistance. You can follow our simple
+                   steps in
+                   the Support section or contact our team for personalized help.
+                </p>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                   Lorem Ipsum has been the industry's standard dummy
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- end fqo section  -->
+
+      <!-- start cta section  -->
+      <section class="min-vh-100 cta-section cenetr-grid">
+        <div class="container gap-5 gap-md-0 row align-items-end">
+          <div class="col-md-6 text-center text-md-start col-lg-8">
+          <h1 class="cta-titel">Experiment without <br> Compromises</h1>
+            <p class="cta-discrption"> Join us and take advantage of our 14-day free trial to explore <br>
+              all the features and benefits we offer.</p>
+            <button class="cta-button">Free Trial for 14 Days</button>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <h4 class="cta-titel-two">Personalized Assistance</h4>
+            <p class="cta-discrption-two">Visit our Online Support section to find tutorials, 
+              guides, and common solutions. </p>
+              <a href="#" class="green-link">Contact </a>
+          </div>
+        </div>
+      </section>
+      <!-- end cta section  -->
+
+      <!-- start footer section  -->
+      <footer class="min-vh-100 cenetr-grid py-4">
+        <div class="container-md text-center text-lg-start row">
+          <div class="col-sm-5 d-grid gap-4">
+            <div>
+              <img src="./public/footer-logo.png" class="footer-logo" alt="">
+              <p class="footer-info">
+                <span class="eay-brown">Offices</span> <br>
+                NordelHost, 8888 Dr.-Frederik- <br>
+                 Philips Claus, Montreal, H688M <br> 77X666, Canada
+              </p>
+            </div>
+            <p class="footer-info">
+              <span class="eay-brown">
+      Support phone
+              </span> <br>
+              +995-445-551-4048
+            </p>
+            <p class="footer-info">
+              <span class="eay-brown">
+      Sales area
+              </span> <br>
+              sales@nordel.hosting
+            </p>
+          </div>
+          <div class="col-sm-4 d-grid" style="gap:60px;">
+            <ul class="d-grid" style="gap: 10px;">
+              <h3 class="footer-titel">About Us</h3>
+              <li class="footer-link"><a href="#">Our history</a></li>
+              <li class="footer-link"><a href="#">Core Values</a></li>
+              <li class="footer-link"><a href="#">Our team</a></li>
+              <li class="footer-link"><a href="#">Data center</a></li>
+            </ul>
+            <ul class="d-grid" style="gap: 10px;">
+              <h3 class="footer-titel">Help and Support</h3>
+              <li class="footer-link"><a href="#">Frequent questions</a></li>
+              <li class="footer-link"><a href="#">Contact</a></li>
+              <li class="footer-link"><a href="#">Help Center</a></li>
+              <li class="footer-link"><a href="#">Chat Online</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 d-grid" style="gap:60px;">
+            <ul class="d-grid" style="gap: 10px;">
+              <h3 class="footer-titel">Explore Our Plans:</h3>
+              <li class="footer-link"><a href="#">Entrepreneur Plan</a></li>
+              <li class="footer-link"><a href="#">Commerce Plan</a></li>
+              <li class="footer-link"><a href="#">Busines Plan</a></li>
+            </ul>
+            <ul class="d-grid" style="gap: 10px;">
+              <h3 class="footer-titel">Social Networks</h3>
+              <li class="footer-link"><a href="#">Facebook</a></li>
+              <li class="footer-link"><a href="#">X twitter</a></li>
+              <li class="footer-link"><a href="#">Instagram</a></li>
+              <li class="footer-link"><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+          <div class="col-12">
+            <hr class="footer-sprater">
+          </div>
+        </div>
+        <div class="container">
+          <div class="down-footer-text w-100 text-center">
+            <p>© 2023 Nordel Web Hosting Provider, designed by Th3s</p>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer section  -->
+
+
+   <!-- js file -->
+<script type="module" src="./js/main.js"></script>
+
+  </body>
+  
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

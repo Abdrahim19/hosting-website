@@ -1,0 +1,53 @@
+@media screen and (max-width:576px) {
+}
+@media screen and (min-width:576px)  {
+
+}
+@media screen and (max-width:380px) {
+
+}
+@media screen and (min-width:330px) {
+
+}
+@media screen and (min-width:400px) {
+
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+
+}
+@media screen and (min-width:830px) and (max-width:992px) {    
+}
+
+@media (max-width:768px) {
+    .navlinks {
+        background-color: #4DA60D ;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: -33rem;
+        transition: .5s;
+        z-index: 10;
+        &.active {
+            top: clamp(100px ,4vw , 150px);
+        }
+        .nav_link {
+            color: #F5F6F3 !important;
+            padding-block: 1rem;
+            padding-inline: .5rem;
+            transition: .5s;
+            &:hover {
+                background-color:#F5F6F3 ;
+                color:#45503D !important ;
+            }
+        }
+    }
+}
+@media (max-width:992px) {
+    .Hosting-readMore {
+        margin-inline: auto;
+    }
+  
+}
+
+@media (min-width:992px) {
+}

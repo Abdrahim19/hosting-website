@@ -1,0 +1,31 @@
+/* import css files*/
+@import url('./assets/helpers.css');
+@import url('./assets/reset.css');
+@import url('./assets/commen.css');
+@import url('./sections/header.css');
+
+/* media break points */
+@import url('./assets/media/desktop.css');
+@import url('./assets/media/mobile.css');
+@import url('./assets/media/large.css');
+
+/* import bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* import the font we need for the project */
+  @import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;500;600;700&display=swap');
+
+:root {
+    /* Fonts familey */
+    --ff-Anek:'Anek Latin', sans-serif;
+    --ff-secondary:'';
+    /* Colors */
+
+    /*  */
+
+}
+
+
+body {
+font-family: var(--ff-Anek);
+}
