@@ -15,9 +15,9 @@
 :root {
     /* root for loder  */
 	--hue: 223;
-	--bg: hsl(var(--hue),90%,90%);
+	--bg: #86e741;
 	--fg: hsl(var(--hue),90%,10%);
-	--primary: hsl(var(--hue),90%,50%);
+	--primary:#4DA60D;
 	--trans-dur: 0.3s;
 	font-size: calc(16px + (32 - 16) * (100vw - 320px) / (2560 - 320));
 }
@@ -28,6 +28,9 @@
     display: flex;
     font: 1em/1.5 sans-serif;
     height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 99;
     transition:
         background-color var(--trans-dur),
         color var(--trans-dur);
