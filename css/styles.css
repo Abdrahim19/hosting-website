@@ -507,6 +507,8 @@ color: #4da60d;
   }
 }
 
+.main-sparaiter {
+}
 footer {
   background-color: #f5f6f3;
   font-family: var(--ff-Anek);
@@ -516,7 +518,7 @@ aspect-ratio: 1;
   }
   .eay-brown {
 font-style: normal;
-font-weight: 600;
+font-weight: 400;
 font-size: 16px;
 line-height: 24px; 
 color: #9a988d;
@@ -524,7 +526,7 @@ margin-bottom: 5px;
   }
   .footer-info {
 font-style: normal;
-font-weight: 600;
+font-weight: 400;
 font-size: 20px;
 line-height: 30px; 
 color: #444f3c;
