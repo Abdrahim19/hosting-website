@@ -19,6 +19,10 @@
 }
 
 @media (max-width:768px) {
+    .big-primery-button,
+    .big-outline-button {
+        width: 100%;
+    }
     .navlinks {
         background-color: #4DA60D ;
         width: 100%;
