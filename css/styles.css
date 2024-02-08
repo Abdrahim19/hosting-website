@@ -64,7 +64,7 @@ color: var(--clr-green-900);
   place-items: center;
   .hero-titel  {
 font-family: var(--ff-Narrenschiff);
-font-size:clamp(40px ,6vw , 72px);
+font-size:clamp(30px ,6vw , 72px);
 font-weight: bold;
 line-height:clamp(45px ,6vw , 82px);
 color: var(--clr-mainBlack);
