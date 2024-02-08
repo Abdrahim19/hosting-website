@@ -10,3 +10,16 @@ const menu = document.querySelector('.navlinks');
 menuToggle.addEventListener('click', function() {
   menu.classList.toggle('active');
 });
+
+// start fqo logic section 
+
+const fqo_boxes = document.querySelectorAll('.fqo-box');
+
+console.log(fqo_boxes);
+
+fqo_boxes.forEach((fqo_box) => {
+  console.log(fqo_box);
+  fqo_box.addEventListener('click', () => {
+    fqo_box.classList.toggle('active');
+  });
+});

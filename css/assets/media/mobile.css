@@ -50,8 +50,19 @@
     .Hosting-readMore {
         margin-inline: auto;
     }
-  
+    
 }
 
 @media (min-width:992px) {
+    header {
+        max-width: 41rem;
+        margin-inline: auto;
+    }
+    .hero-layout {
+        width: 41rem;
+    }
+    .hero-img {
+        margin-bottom: -10rem;
+        position: relative;
+    }
 }

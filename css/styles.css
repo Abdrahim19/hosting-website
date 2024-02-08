@@ -360,6 +360,7 @@ font-size: 20px;
 line-height: 30px;
 position: relative;
 width: fit-content;
+margin-inline: auto;
 &::before {
 content: '';
 position: absolute;
@@ -508,6 +509,8 @@ color: #4da60d;
 }
 
 .main-sparaiter {
+  height: 1.5px;
+  background-color:#e4e4e0;
 }
 footer {
   background-color: #f5f6f3;
